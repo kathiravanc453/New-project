@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Technology Syllabus</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f9;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 32px 16px 48px;
+    }
+    header {
+      max-width: 1000px;
+      margin: 0 auto 24px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+    }
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    main {
+      max-width: 1000px;
+      margin: 20px auto 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 18px;
+    }
+    .unit {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 18px 14px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .unit header {
+      text-align: left;
+      margin: 0;
+    }
+    .unit-title {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    ul.topics {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: var(--text);
+    }
+    ul.topics li {
+      margin: 4px 0;
+    }
+    footer {
+      max-width: 1000px;
+      margin: 28px auto 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.6rem; }
+      .unit { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Technology Syllabus</h1>
+    <p class="lead">Structured overview of all five units.</p>
+  </header>
+
+  <main>
+    <article class="unit" id="unit-1">
+      <header>
+        <h2 class="unit-title">Unit I: Website Basics, HTML 5, CSS 3, Web 2.0</h2>
+      </header>
+      <ul class="topics">
+        <li>Web Essentials: Clients, Servers, Communication
+          <a href="https://www.scribd.com/document/774533653/Web-Essentials" target="_blank">(MDN Web Docs)</a>
+        </li>
+
+        <li>The Internet; World Wide Web; HTTP messages (request/response)
+          <a href="https://www.geeksforgeeks.org/html/what-is-http/" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Web Clients and Web Servers
+          <a href="https://www.geeksforgeeks.org/websites-apps/what-is-a-web-server-working-and-architecture/" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>HTML5: Tables, Lists, Images, Control elements, Drag and Drop
+          <a href="https://www.geeksforgeeks.org/html/html5-complete-reference/" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Media: Audio and Video controls
+          <a href="https://www.geeksforgeeks.org/html5-audio-and-video-tags/" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>CSS3: Inline, embedded, external; rule cascading and inheritance
+          <a href="https://www.geeksforgeeks.org/css-cascading-style-sheets/" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Backgrounds, Border Images, Colors, Shadows, Text
+          <a href="https://www.geeksforgeeks.org/css3-backgrounds-borders-colors-text/" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Transformations, Transitions, Animations
+          <a href="https://www.geeksforgeeks.org/css3-transformations-transitions-animations/" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Bootstrap Framework 
+          <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">(Official Docs)</a>
+        </li>
+      </ul>
+    </article>
+
+    <article class="unit" id="unit-2">
+      <header>
+        <h2 class="unit-title">Unit II: Client Side Programming</h2>
+      </header>
+      <ul class="topics">
+        <li>JavaScript introduction
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>JavaScript DOM model
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Exception handling; validation
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Built-in objects
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Event handling
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>DHTML with JavaScript
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>JSON introduction
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank">(MDN Web Docs)</a>
+        </li>
+        <li>Syntax and Function files
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON" target="_blank">(MDN Web Docs)</a>
+        </li>
+      </ul>
+    </article>
+
+    <article class="unit" id="unit-3">
+      <header>
+        <h2 class="unit-title">Unit III: Server Side Programming</h2>
+      </header>
+      <ul class="topics">
+        <li>Servlets: Java Servlet Architecture
+          <a href="https://www.geeksforgeeks.org/servlet-java/" target="_blank">(GeeksforGeeks)</a>
+        </li>
+        <li>Servlet Life Cycle
+          <a href="https://www.geeksforgeeks.org/life-cycle-of-servlet/" target="_blank">(GeeksforGeeks)</a>
+        </li>
+        <li>Form GET and POST actions
+          <a href="https://www.geeksforgeeks.org/difference-between-get-and-post-methods-in-servlet/" target="_blank">(GeeksforGeeks)</a>
+        </li>
+        <li>Session handling; understanding cookies
+          <a href="https://www.geeksforgeeks.org/session-tracking-in-servlets/" target="_blank">(GeeksforGeeks)</a>
+        </li>
+        <li>Database connectivity: JDBC
+          <a href="https://www.geeksforgeeks.org/jdbc-java-database-connectivity/" target="_blank">(GeeksforGeeks)</a>
+        </li>
+      </ul>
+    </article>
+
+    <article class="unit" id="unit-4">
+      <header>
+        <h2 class="unit-title">Unit IV: PHP and XML</h2>
+      </header>
+      <ul class="topics">
+        <li>Introduction to PHP
+          <a href="https://www.php.net/manual/en/intro-whatis.php" target="_blank">(Official Docs)</a>
+        </li>
+        <li>Using PHP; Variables; Program control
+          <a href="https://www.php.net/manual/en/language.basic-syntax.php" target="_blank">(Official Docs)</a>
+        </li>
+        <li>Built-in functions; Form validation
+          <a href="https://www.php.net/manual/en/language.functions.php" target="_blank">(Official Docs)</a>
+        </li>
+        <li>XML basics; DTD; XML Schema
+          <a href="https://www.w3schools.com/xml/xml_whatis.asp" target="_blank">(W3Schools)</a>
+        </li>
+        <li>XML Parsers and validation; XSL
+          <a href="https://www.w3schools.com/xml/xml_parser.asp" target="_blank">(W3Schools)</a>
+        </li>
+      </ul>
+    </article>
+
+    <article class="unit" id="unit-5">
+      <header>
+        <h2 class="unit-title">Unit V: Introduction to Angular and Web Application Frameworks</h2>
+      </header>
+      <ul class="topics">
+        <li>AngularJS introduction; MVC architecture
+          <a href="https://angularjs.org/" target="_blank">(Official Docs)</a>
+        </li>
+        <li>ng attributes, expressions, data binding
+          <a href="https://angularjs.org/" target="_blank">(Official Docs)</a>
+        </li>
+        <li>Conditional and style directives
+          <a href="https://angularjs.org/" target="_blank">(Official Docs)</a>
+        </li>
+        <li>Controllers, filters, forms, routers, modules, services
+          <a href="https://angularjs.org/" target="_blank">(Official Docs)</a>
+        </li>
+        <li>Web application frameworks and tools: Firebase, Docker, Node.js, React, Django
+          <a href="https://www.geeksforgeeks.org/introduction-to-web-frameworks/" target="_blank">(GeeksforGeeks)</a>
+        </li>
+        <li>UI & UX</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    Thank you
+  </footer>
+</body>
+</html>
